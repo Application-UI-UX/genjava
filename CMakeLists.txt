@@ -18,8 +18,8 @@ find_package(catkin REQUIRED COMPONENTS genmsg rosjava_build_tools)
 catkin_package(
   CATKIN_DEPENDS genmsg rosjava_build_tools
   CFG_EXTRAS
-    genjava-extras.cmake
-    genjava-catkin-api.cmake
+  genjava-extras.cmake
+  genjava-catkin-api.cmake
 )
 
 catkin_python_setup()
@@ -31,8 +31,10 @@ catkin_python_setup()
 add_subdirectory(scripts)
 
 file(WRITE ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genjava "Java")
-install(FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genjava
-  DESTINATION ${GENMSG_LANGS_DESTINATION})
+install(
+  FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genjava
+  DESTINATION ${GENMSG_LANGS_DESTINATION}
+)
 
 ##############################################################################
 # Tests
@@ -41,4 +43,3 @@ install(FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genjava
 #if(CATKIN_ENABLE_TESTING)
 #  catkin_add_nosetests(test)
 #endif()
-
