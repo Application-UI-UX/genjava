@@ -1,6 +1,6 @@
 <package>
   <name>genjava</name>
-  <version>0.3.4</version>
+  <version>0.4.0</version>
   <description>
     Java ROS message and service generators.
   </description>
@@ -10,10 +10,8 @@
   <url type="website">http://www.ros.org/wiki/genjava</url>
   <url type="repository">https://github.com/rosjava/genjava</url>
   <url type="bugtracker">https://github.com/rosjava/genjava/issues</url>
-
-  <maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
-
   <author>Daniel Stonier</author>
+  <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
 
   <buildtool_depend version_gte="0.5.78">catkin</buildtool_depend>
 
@@ -31,7 +29,7 @@
 
   <export>
     <message_generator>java</message_generator>
-    <rosdoc config="rosdoc.yaml"/>
-    <architecture_independent/>
+    <rosdoc config="rosdoc.yaml" />
+    <architecture_independent />
   </export>
 </package>
