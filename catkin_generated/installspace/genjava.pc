@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: genjava
+Description: Description of genjava
+Version: 0.4.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: genmsg rosjava_build_tools
