@@ -9,7 +9,7 @@ project(genjava)
 # Find Package
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS genmsg rosjava_build_tools)
+find_package(catkin REQUIRED COMPONENTS genmsg)
 
 ##############################################################################
 # Catkin
