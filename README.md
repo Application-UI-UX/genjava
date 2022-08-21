@@ -1,25 +1,8 @@
-genjava
-=======
+Updated [rosjava_core](https://github.com/Application-UI-UX/rosjava_core) readme.
+Standard [rosjava_core](https://github.com/rosjava/rosjava_core) readme.
 
-RosJava message definition and serialization artifact generators.
+### Building and Packaging
+The package is published in https://github.com/Application-UI-UX
 
-For future reference, executing the generator from the command line requires a command of the following kind:
-
-```
-java -classpath .:./message_generation-0.1.16.jar org.ros.internal.message.GenerateInterfaces
-```
-
-This doesn't work exactly though because it doesn't pull in the full classpath. Make sure that is set to include everything you need. You'll also need arguments of the kind we're currently using in the hydro groovy plugin:
-
-```
-        def generatedSourcesDir = "${p.buildDir}/generated-src"
-        def generateSourcesTask = p.tasks.create("generateSources", JavaExec)
-        generateSourcesTask.description = "Generate sources for " + pkg.name
-        generateSourcesTask.outputs.dir(p.file(generatedSourcesDir))
-        /* generateSourcesTask.args = new ArrayList<String>([generatedSourcesDir, pkg.name]) */
-        generateSourcesTask.args = new ArrayList<String>([generatedSourcesDir, '--package-path=' + pkg.directory, pkg.name])
-        generateSourcesTask.classpath = p.configurations.runtime
-        generateSourcesTask.main = 'org.ros.internal.message.GenerateInterfaces'
-        p.tasks.compileJava.source generateSourcesTask.outputs.files
-```
-
+## Usage ##
+Refer to http://ros.org/wiki/genjava.

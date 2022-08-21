@@ -1,16 +1,14 @@
 <package>
   <name>genjava</name>
   <version>0.4.0</version>
-  <description>
-    Java ROS message and service generators.
-  </description>
-
+  <description> Java ROS message and service generators. </description>
   <license>BSD</license>
 
   <url type="website">http://www.ros.org/wiki/genjava</url>
   <url type="repository">https://github.com/rosjava/genjava</url>
   <url type="bugtracker">https://github.com/rosjava/genjava/issues</url>
   <author>Daniel Stonier</author>
+  <author>Ronaldson Bellande</author>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
 
   <buildtool_depend version_gte="0.5.78">catkin</buildtool_depend>
