@@ -53,6 +53,7 @@
       <groupId>org.ros</groupId>
       <artifactId>rosjava_build_tools</artifactId>
       <version>0.4.0-SNAPSHOT</version>
+      <type>jar</type>
     </dependency>
   </dependencies>
 
