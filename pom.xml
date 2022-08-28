@@ -26,7 +26,7 @@
     <repository>
       <id>rosjava_build_tools-snapshot</id>
       <name>Rosjava_build_tools Snapshot</name>
-      <url>https://raw.github.com/Application-UI-UX/rosjava_build_tools/snapshots/</url>
+      <url>https://raw.github.com/Application-UI-UX/rosjava_build_tools/</url>
       <layout>default</layout>
       <snapshots>
         <enabled>true</enabled>
