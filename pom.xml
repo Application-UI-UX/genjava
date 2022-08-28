@@ -24,8 +24,8 @@
 
   <repositories>
     <repository>
-      <id>rosjava_build_tools</id>
-      <name>rosjava_build_tools-snapshot</name>
+      <id>rosjava_build_tools-snapshot</id>
+      <name>Rosjava_build_tools Snapshot</name>
       <url>https://raw.github.com/Application-UI-UX/rosjava_build_tools/snapshots/</url>
       <layout>default</layout>
       <snapshots>
@@ -35,8 +35,8 @@
     </repository>
 
     <repository>
-      <id>rosjava_build_tools</id>
-      <name>rosjava_build_tools-releases</name>
+      <id>rosjava_build_tools-releases</id>
+      <name>Rosjava_build_tools Releases</name>
       <url>https://raw.github.com/Application-UI-UX/rosjava_build_tools/releases/</url>
       <layout>default</layout>
     </repository>
