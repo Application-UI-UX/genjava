@@ -24,12 +24,21 @@
 
   <repositories>
     <repository>
-      <id>genjava</id>
-      <url>https://raw.github.com/Application-UI-UX/genjava/</url>
+      <id>rosjava_build_tools</id>
+      <name>rosjava_build_tools-snapshot</name>
+      <url>https://raw.github.com/Application-UI-UX/rosjava_build_tools/snapshots/</url>
+      <layout>default</layout>
       <snapshots>
         <enabled>true</enabled>
         <updatePolicy>always</updatePolicy>
       </snapshots>
+    </repository>
+
+    <repository>
+      <id>rosjava_build_tools</id>
+      <name>rosjava_build_tools-releases</name>
+      <url>https://raw.github.com/Application-UI-UX/rosjava_build_tools/releases/</url>
+      <layout>default</layout>
     </repository>
   </repositories>
 
