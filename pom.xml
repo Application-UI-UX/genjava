@@ -8,13 +8,11 @@
   <version>0.4.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-
 
   <distributionManagement>
     <repository>
@@ -35,6 +33,12 @@
     </repository>
   </repositories>
 
+  <dependency>
+    <groupId>org.ros</groupId>
+    <artifactId>rosjava_build_tools</artifactId>
+    <version>0.4.0-SNAPSHOT</version>
+  </dependency>
+
   <developers>
     <developer>
       <name>Ronaldson Bellande</name>
@@ -43,7 +47,6 @@
       <organizationUrl>https://github.com/Application-UI-UX/genjava</organizationUrl>
     </developer>
   </developers>
-
 
   <scm>
     <connection>scm:git:https://github.com/Application-UI-UX/genjava.git</connection>
