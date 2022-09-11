@@ -1,4 +1,4 @@
-## genjava
+## Genjava
 
 Updated Version [rosjava_core](https://github.com/Application-UI-UX/genjava) readme.
 
