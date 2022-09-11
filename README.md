@@ -1,8 +1,8 @@
 ## Genjava
 
-Updated Version [rosjava_core](https://github.com/Application-UI-UX/genjava) readme.
+Updated Version [genjava](https://github.com/Application-UI-UX/genjava) readme.
 
-Standard Version [rosjava_core](https://github.com/rosjava/genjava) readme.
+Standard Version [genjava](https://github.com/rosjava/genjava) readme.
 
 This package is a generator of rosjava message artifacts for core ros messages.
 Latest versions and Maintainer is on Application-UI-UX
