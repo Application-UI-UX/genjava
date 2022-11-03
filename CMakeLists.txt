@@ -3,23 +3,23 @@
 ##############################################################################
 
 cmake_minimum_required(VERSION 3.0.2)
-project(genjava)
+project(genmobile)
 
 ##############################################################################
 # Find Package
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS genmsg rosjava_build_tools)
+find_package(catkin REQUIRED COMPONENTS genmsg rosmobile_build_tools)
 
 ##############################################################################
 # Catkin
 ##############################################################################
 
 catkin_package(
-  CATKIN_DEPENDS genmsg rosjava_build_tools
+  CATKIN_DEPENDS genmsg rosmobile_build_tools
   CFG_EXTRAS
-  genjava-extras.cmake
-  genjava-catkin-api.cmake
+  genmobile-extras.cmake
+  genmobile-catkin-api.cmake
 )
 
 catkin_python_setup()
@@ -30,9 +30,9 @@ catkin_python_setup()
 
 add_subdirectory(scripts)
 
-file(WRITE ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genjava "Java")
+file(WRITE ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genmobile "Java")
 install(
-  FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genjava
+  FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genmobile
   DESTINATION ${GENMSG_LANGS_DESTINATION}
 )
 
