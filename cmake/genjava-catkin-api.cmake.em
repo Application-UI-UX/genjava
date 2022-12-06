@@ -2,11 +2,11 @@
 # location of scripts in develspace
   set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "@(CMAKE_CURRENT_SOURCE_DIR)/scripts")
 @[else]@
-  set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "${genjava_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
+  set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "${genmobile_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
 @[end if]@
 
-set(GENJAVA_MESSAGE_ARTIFACTS_BIN ${GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR}/genjava_message_artifacts)
-set(genjava_INSTALL_DIR "maven/org/ros/rosjava_messages")
+set(GENJAVA_MESSAGE_ARTIFACTS_BIN ${GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR}/genmobile_message_artifacts)
+set(genmobile_INSTALL_DIR "maven/org/ros/rosjava_messages")
 
 include(CMakeParseArguments)
 

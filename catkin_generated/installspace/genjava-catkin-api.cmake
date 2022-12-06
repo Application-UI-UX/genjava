@@ -1,7 +1,7 @@
-  set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "${genjava_DIR}/../../../lib/genjava")
+  set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "${genmobile_DIR}/../../../lib/genmobile")
 
-set(GENJAVA_MESSAGE_ARTIFACTS_BIN ${GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR}/genjava_message_artifacts)
-set(genjava_INSTALL_DIR "maven/org/ros/rosjava_messages")
+set(GENJAVA_MESSAGE_ARTIFACTS_BIN ${GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR}/genmobile_message_artifacts)
+set(genmobile_INSTALL_DIR "maven/org/ros/rosjava_messages")
 
 include(CMakeParseArguments)
 

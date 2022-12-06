@@ -3,11 +3,11 @@
 set(GENJAVA_BIN_DIR "@(CMAKE_CURRENT_SOURCE_DIR)/scripts")
 @[else]@
 # location of scripts in installspace
-set(GENJAVA_BIN_DIR "${genjava_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
+set(GENJAVA_BIN_DIR "${genmobile_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
 @[end if]@
 
-set(GENJAVA_BIN ${GENJAVA_BIN_DIR}/genjava_gradle_project.py)
-set(genjava_INSTALL_DIR "maven/org/ros/rosjava_messages")
+set(GENJAVA_BIN ${GENJAVA_BIN_DIR}/genmobile_gradle_project.py)
+set(genmobile_INSTALL_DIR "maven/org/ros/rosjava_messages")
 
 macro(_generate_msg_java ARG_PKG ARG_MSG ARG_IFLAGS ARG_MSG_DEPS ARG_GEN_OUTPUT_DIR)
   list(APPEND ALL_GEN_OUTPUT_FILES_java ${ARG_MSG} ${ARG_MSG_DEPS})
@@ -18,7 +18,7 @@ macro(_generate_msg_java ARG_PKG ARG_MSG ARG_IFLAGS ARG_MSG_DEPS ARG_GEN_OUTPUT_
     #   ARG_MSG      : /mnt/zaphod/ros/rosjava/hydro/src/foo_msgs/msg/Foo.msg
     #   ARG_IFLAGS   : -Ifoo_msgs:/mnt/zaphod/ros/rosjava/hydro/src/foo_msgs/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg
     #   ARG_MSG_DEPS : ???
-    #   ARG_GEN_OUTPUT_DIR : /mnt/zaphod/ros/rosjava/hydro/devel/${genjava_INSTALL_DIR}/foo_msgs
+    #   ARG_GEN_OUTPUT_DIR : /mnt/zaphod/ros/rosjava/hydro/devel/${genmobile_INSTALL_DIR}/foo_msgs
     
     #message(STATUS "Java generator for [${ARG_PKG}][${ARG_MSG}]")
     #message(STATUS "  ARG_IFLAGS...........${ARG_IFLAGS}")

@@ -66,12 +66,12 @@ def read_template(tmplf):
 ##############################################################################
 
 
-def instantiate_genjava_template(template, project_name, project_version, pkg_directory, author, msg_dependencies):
+def instantiate_genmobile_template(template, project_name, project_version, pkg_directory, author, msg_dependencies):
     return template % locals()
 
 
 def get_templates():
-    template_dir = os.path.join(os.path.dirname(__file__), 'templates', 'genjava_project')
+    template_dir = os.path.join(os.path.dirname(__file__), 'templates', 'genmobile_project')
     templates = {}
     templates['build.gradle'] = read_template(os.path.join(template_dir, 'build.gradle.in'))
     return templates
@@ -80,7 +80,7 @@ def get_templates():
 def populate_project(project_name, project_version, pkg_directory, gradle_project_dir, msg_dependencies):
     author = author_name()
     for filename, template in get_templates().iteritems():
-        contents = instantiate_genjava_template(template, project_name, project_version, pkg_directory, author, msg_dependencies)
+        contents = instantiate_genmobile_template(template, project_name, project_version, pkg_directory, author, msg_dependencies)
         try:
             p = os.path.abspath(os.path.join(gradle_project_dir, filename))
             f = open(p, 'w')
@@ -143,24 +143,24 @@ def create(msg_pkg_name, output_dir):
     :param dict msg_package_index:  { name : catkin_pkg.Package }
     :param str output_dir:
     '''
-    genjava_gradle_dir = os.path.join(output_dir, msg_pkg_name)
-    if os.path.exists(genjava_gradle_dir):
-        shutil.rmtree(genjava_gradle_dir)
-    os.makedirs(genjava_gradle_dir)
+    genmobile_gradle_dir = os.path.join(output_dir, msg_pkg_name)
+    if os.path.exists(genmobile_gradle_dir):
+        shutil.rmtree(genmobile_gradle_dir)
+    os.makedirs(genmobile_gradle_dir)
     msg_package_index = create_msg_package_index()
     if msg_pkg_name not in msg_package_index.keys():
         raise IOError("could not find %s among message packages. Does the package have a <build_depend> on message_generation in its package.xml?" % msg_pkg_name)
 
     msg_dependencies = create_dependency_string(msg_pkg_name, msg_package_index)
 
-    create_gradle_wrapper(genjava_gradle_dir)
+    create_gradle_wrapper(genmobile_gradle_dir)
     pkg_directory = os.path.abspath(os.path.dirname(msg_package_index[msg_pkg_name].filename))
     msg_pkg_version = msg_package_index[msg_pkg_name].version
-    populate_project(msg_pkg_name, msg_pkg_version, pkg_directory, genjava_gradle_dir, msg_dependencies)
+    populate_project(msg_pkg_name, msg_pkg_version, pkg_directory, genmobile_gradle_dir, msg_dependencies)
 
 
 def build(msg_pkg_name, output_dir, verbosity):
-    # Are there droppings? If yes, then this genjava has marked this package as
+    # Are there droppings? If yes, then this genmobile has marked this package as
     # needing a compile (it's new, or some msg file changed).
     droppings_file = os.path.join(output_dir, msg_pkg_name, 'droppings')
     if not os.path.isfile(droppings_file):
@@ -186,8 +186,8 @@ def standalone_create_and_build(msg_pkg_name, output_dir, verbosity, avoid_rebui
     :param bool avoid_rebuilding: don't rebuild if working dir is already there
     :return bool : whether it built, or skipped because it was avoiding a rebuild
     '''
-    genjava_gradle_dir = os.path.join(output_dir, msg_pkg_name)
-    if os.path.exists(genjava_gradle_dir) and avoid_rebuilding:
+    genmobile_gradle_dir = os.path.join(output_dir, msg_pkg_name)
+    if os.path.exists(genmobile_gradle_dir) and avoid_rebuilding:
         return False
     create(msg_pkg_name, output_dir)
     working_directory = os.path.join(os.path.abspath(output_dir), msg_pkg_name)

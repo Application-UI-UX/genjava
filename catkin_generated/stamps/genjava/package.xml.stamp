@@ -1,12 +1,12 @@
 <package>
-  <name>genjava</name>
+  <name>genmobile</name>
   <version>0.4.0</version>
   <description> Java ROS message and service generators. </description>
   <license>BSD</license>
 
-  <url type="website">http://www.ros.org/wiki/genjava</url>
-  <url type="repository">https://github.com/rosjava/genjava</url>
-  <url type="bugtracker">https://github.com/rosjava/genjava/issues</url>
+  <url type="website">http://www.ros.org/wiki/genmobile</url>
+  <url type="repository">https://github.com/rosjava/genmobile</url>
+  <url type="bugtracker">https://github.com/rosjava/genmobile/issues</url>
   <author>Daniel Stonier</author>
   <author>Ronaldson Bellande</author>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>

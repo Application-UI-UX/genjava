@@ -72,12 +72,12 @@ def parse_arguments(argv):
 
 def main(argv):
     '''
-    Used as the builder for genjava on the fly as other message language interfaces
+    Used as the builder for genmobile on the fly as other message language interfaces
     are built. There is a bit of smarts inside this to work out when msgs have
     changed and so forth.
     '''
     args = parse_arguments(argv[1:])
-    #print("genjava %s/%s" % (args.package, args.message))
+    #print("genmobile %s/%s" % (args.package, args.message))
     if not args.compile:
         gradle_project.create(args.package, args.output_dir)
     else:
@@ -102,7 +102,7 @@ def standalone_main(argv):
     generate artifacts for.
     '''
     args = standalone_parse_arguments(argv[1:])
-    #print("genjava %s/%s/%s" % (args.package, args.output_dir, args.verbose))
+    #print("genmobile %s/%s/%s" % (args.package, args.output_dir, args.verbose))
 
     sorted_package_tuples = rosjava_build_tools.catkin.index_message_package_dependencies_from_local_environment(package_name_list=args.packages)
 
