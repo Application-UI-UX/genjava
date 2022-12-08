@@ -6,30 +6,30 @@
 @[end if]@
 
 set(GENJAVA_MESSAGE_ARTIFACTS_BIN ${GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR}/genmobile_message_artifacts)
-set(genmobile_INSTALL_DIR "maven/org/ros/rosjava_messages")
+set(genmobile_INSTALL_DIR "maven/org/ros/rosmobile_messages")
 
 include(CMakeParseArguments)
 
-# Api for a a catkin metapackage rolls rosjava messages for
+# Api for a a catkin metapackage rolls rosmobile messages for
 # its dependencies. Accepts a list of package names attached
 # to the PACKAGES arg (similar to the genmsg
 # 'generate_messages' api.
 #
-#   generate_rosjava_messages(
+#   generate_rosmobile_messages(
 #     PACKAGES
 #         std_msgs
 #         geometry_msgs
 #   )
-macro(generate_rosjava_messages)
+macro(generate_rosmobile_messages)
   if( ${ARGC} EQUAL 0 )
     return() # Nothing to do (no packages specified)
   else()
     cmake_parse_arguments(ARG "" "" "PACKAGES" ${ARGN})
   endif()
   if(ARG_UNPARSED_ARGUMENTS)
-    message(FATAL_ERROR "generate_rosjava_messages() called with unused arguments: ${ARG_UNPARSED_ARGUMENTS}")
+    message(FATAL_ERROR "generate_rosmobile_messages() called with unused arguments: ${ARG_UNPARSED_ARGUMENTS}")
   endif()
-  catkin_rosjava_env_setup()
+  catkin_rosmobile_env_setup()
   set(ROS_GRADLE_VERBOSE $ENV{ROS_GRADLE_VERBOSE})
   if(ROS_GRADLE_VERBOSE)
       set(verbosity "--verbosity")
@@ -47,7 +47,7 @@ macro(generate_rosjava_messages)
         -p ${ARG_PACKAGES} # this has to be a list argument so it separates each arg (not a single string!)
     DEPENDS
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-    COMMENT "Compiling rosjava message artifacts for [${package_list}]"
+    COMMENT "Compiling rosmobile message artifacts for [${package_list}]"
   )
   set(build_dir_to_be_cleaned_list)
   foreach(pkg ${ARG_PACKAGES})

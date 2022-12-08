@@ -11,7 +11,7 @@ import shutil
 import subprocess
 from catkin_pkg.packages import find_packages
 import rospkg
-import rosjava_build_tools.catkin
+import rosmobile_build_tools.catkin
 
 ##############################################################################
 # Utils
@@ -99,7 +99,7 @@ def create_dependency_string(project_name, msg_package_index):
             dependency_package = msg_package_index[dep.name]
         except KeyError:
             continue  # it's not a message package
-        gradle_dependency_string += "  compile 'org.ros.rosjava_messages:" + dependency_package.name + ":" + dependency_package.version + "'\n"
+        gradle_dependency_string += "  compile 'org.ros.rosmobile_messages:" + dependency_package.name + ":" + dependency_package.version + "'\n"
     return gradle_dependency_string
 
 
@@ -124,7 +124,7 @@ def create_msg_package_index():
         for unused_package_path, package in find_packages(path).items():
             if ('message_generation' in [dep.name for dep in package.build_depends] or
                 'genmsg' in [dep.name for dep in package.build_depends] or
-                package.name in rosjava_build_tools.catkin.message_package_whitelist):
+                package.name in rosmobile_build_tools.catkin.message_package_whitelist):
 #                 print(package.name)
 #                 print("  version: %s" % package.version)
 #                 print("  dependencies: ")
