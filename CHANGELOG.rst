@@ -38,7 +38,7 @@ Changelog for package genmobile
 
 0.1.4 (2015-03-01)
 ------------------
-* generate_rosjava_messages cmake api needs the rosjava environment.
+* generate_rosmobile_messages cmake api needs the rosmobile environment.
 * Contributors: Daniel Stonier
 
 0.1.3 (2015-02-28)
@@ -48,7 +48,7 @@ Changelog for package genmobile
 
 0.1.2 (2015-02-27)
 ------------------
-* bugfix genmobile dir variable settings, fixes `#1 <https://github.com/rosjava/genmobile/issues/1>`_
+* bugfix genmobile dir variable settings, fixes `#1 <https://github.com/rosmobile/genmobile/issues/1>`_
 * Contributors: Daniel Stonier
 
 0.1.1 (2015-02-25)
