@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava
+CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava
+CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genjava/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

@@ -1,10 +1,10 @@
 ## Genjava
 
-Updated Version [genjava](https://github.com/Application-UI-UX/genmobile) readme.
+Updated Version [genmobile](https://github.com/Application-UI-UX/genmobile) readme.
 
-Standard Version [genjava](https://github.com/rosjava/genjava) readme.
+Standard Version [genmobile](https://github.com/rosmobile/genmobile) readme.
 
-This package is a generator of rosjava message artifacts for core ros messages for mobile
+This package is a generator of rosmobile message artifacts for core ros messages for mobile
 
 ## Important
 The repository has diverged, as the old commits and codes are under the previous License and
@@ -22,7 +22,7 @@ The package is published in https://github.com/Application-UI-UX
 If you would like to add a message dependency to this list, first consider if it is a worthwhile candidate, these libraries 
 are not trying  to replace existing more so displaying useful information to the user with controls
 
-* It is a direct dependency for rosjava/android
+* It is a direct dependency for rosmobile/android
 * It is a popular and stable dependency that will require little maintenance
 * Latest versions are on Application-UI-UX and it is noetic
 
