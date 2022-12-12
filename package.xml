@@ -4,7 +4,7 @@
   <description> Java ROS message and service generators. </description>
   <license>BSD</license>
 
-  <url type="website">http://www.ros.org/wiki/genjava</url>
+  <url type="website">http://www.ros.org/wiki/genmobile</url>
   <url type="repository">https://github.com/rosmobile/genmobile</url>
   <url type="bugtracker">https://github.com/rosmobile/genmobile/issues</url>
   <author>Daniel Stonier</author>
