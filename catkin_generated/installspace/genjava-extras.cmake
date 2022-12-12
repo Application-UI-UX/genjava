@@ -1,8 +1,8 @@
 # location of scripts in installspace
-set(GENJAVA_BIN_DIR "${genjava_DIR}/../../../lib/genjava")
+set(GENJAVA_BIN_DIR "${genmobile_DIR}/../../../lib/genmobile")
 
-set(GENJAVA_BIN ${GENJAVA_BIN_DIR}/genjava_gradle_project.py)
-set(genjava_INSTALL_DIR "maven/org/ros/rosjava_messages")
+set(GENJAVA_BIN ${GENJAVA_BIN_DIR}/genmobile_gradle_project.py)
+set(genmobile_INSTALL_DIR "maven/org/ros/rosmobile_messages")
 
 macro(_generate_msg_java ARG_PKG ARG_MSG ARG_IFLAGS ARG_MSG_DEPS ARG_GEN_OUTPUT_DIR)
   list(APPEND ALL_GEN_OUTPUT_FILES_java ${ARG_MSG} ${ARG_MSG_DEPS})
@@ -10,10 +10,10 @@ macro(_generate_msg_java ARG_PKG ARG_MSG ARG_IFLAGS ARG_MSG_DEPS ARG_GEN_OUTPUT_
     # Example arguments:
     #
     #   ARG_PKG      : foo_msgs
-    #   ARG_MSG      : /mnt/zaphod/ros/rosjava/hydro/src/foo_msgs/msg/Foo.msg
-    #   ARG_IFLAGS   : -Ifoo_msgs:/mnt/zaphod/ros/rosjava/hydro/src/foo_msgs/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg
+    #   ARG_MSG      : /mnt/zaphod/ros/rosmobile/hydro/src/foo_msgs/msg/Foo.msg
+    #   ARG_IFLAGS   : -Ifoo_msgs:/mnt/zaphod/ros/rosmobile/hydro/src/foo_msgs/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg
     #   ARG_MSG_DEPS : ???
-    #   ARG_GEN_OUTPUT_DIR : /mnt/zaphod/ros/rosjava/hydro/devel/${genjava_INSTALL_DIR}/foo_msgs
+    #   ARG_GEN_OUTPUT_DIR : /mnt/zaphod/ros/rosmobile/hydro/devel/${genmobile_INSTALL_DIR}/foo_msgs
     
     #message(STATUS "Java generator for [${ARG_PKG}][${ARG_MSG}]")
     #message(STATUS "  ARG_IFLAGS...........${ARG_IFLAGS}")
@@ -101,12 +101,12 @@ macro(_generate_module_java ARG_PKG ARG_GEN_OUTPUT_DIR ARG_GENERATED_FILES)
             add_dependencies(${ARG_PKG}_generate_messages_java_gradle ${depends}_generate_messages_java_gradle)
         endif()
     endforeach()
-    # Make sure we have built gradle-rosjava_bootstrap if it is in the source workspace
+    # Make sure we have built gradle-rosmobile_bootstrap if it is in the source workspace
     # (otherwise package.xml will make sure it has installed via rosdep/deb.
-    if(TARGET gradle-rosjava_bootstrap)
+    if(TARGET gradle-rosmobile_bootstrap)
         # Preference would be to add it to ${ARG_PKG}_generate_messages_java but that
         # is not defined till after this module is parsed, so add it all
-        add_dependencies(${ARG_PKG}_generate_messages_java_gradle gradle-rosjava_bootstrap)
+        add_dependencies(${ARG_PKG}_generate_messages_java_gradle gradle-rosmobile_bootstrap)
     endif()
 
     ################################

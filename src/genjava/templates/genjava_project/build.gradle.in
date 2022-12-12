@@ -33,13 +33,13 @@ buildscript {
         }
     }
     dependencies {
-        classpath group: 'org.ros.rosjava_bootstrap', name: 'gradle_plugins', version: '[0.3,0.4)'
+        classpath group: 'org.ros.rosmobile_bootstrap', name: 'gradle_plugins', version: '[0.3,0.4)'
     }
 }
 
 apply plugin: 'ros-java'
 apply plugin: 'osgi'
-group 'org.ros.rosjava_messages'
+group 'org.ros.rosmobile_messages'
 version = '%(project_version)s'
 
 ext {
@@ -56,7 +56,7 @@ task generateSources (type: JavaExec) {
 }
 
 dependencies {
-    compile 'org.ros.rosjava_bootstrap:message_generation:[0.3,0.4)'
+    compile 'org.ros.rosmobile_bootstrap:message_generation:[0.3,0.4)'
     %(msg_dependencies)s
 }
 
@@ -67,7 +67,7 @@ jar {
     }
 }
 
-/* Uncomment the following lines in package://genjava/src/genjava/templates/genjava_project/build.gradle.in to
+/* Uncomment the following lines in package://genmobile/src/genmobile/templates/genmobile_project/build.gradle.in to
  * enable Java 6 cross compilation for ROS messages.
  */
 // sourceCompatibility = 1.6
@@ -103,7 +103,7 @@ task info {
  * It kinda works until now because it ignores any package which doesn't conform to this and those are just
  * test packages (we hope).
  *  
- * Until we get this properly fixed (it fails in genjava), then we use the following bugfix to deal with the
+ * Until we get this properly fixed (it fails in genmobile), then we use the following bugfix to deal with the
  * 'Could not copy MANIFEST.MF...' error that occurs when no sources are to be made for an artifact.
  */
 task bugfixtask {

@@ -42,7 +42,7 @@ import os
 #import genmsg
 #import genmsg.command_line
 
-import rosjava_build_tools
+import rosmobile_build_tools
 import catkin_pkg.packages
 from . import gradle_project
 
@@ -59,7 +59,7 @@ def parse_arguments(argv):
     parser.add_argument('-c', '--compile', default=False, action='store_true', help='switch to compile mode (default is generating mode)')
     parser.add_argument('-v', '--verbosity', default=False, action='store_true', help='enable verbosity in debugging (false)')
     #  The include path has a special format, e.g.
-    #     -Ifoo_msgs:/mnt/zaphod/ros/rosjava/hydro/src/foo_msgs/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg
+    #     -Ifoo_msgs:/mnt/zaphod/ros/rosmobile/hydro/src/foo_msgs/msg;-Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg
     #parser.add_argument('-I', '--include-path', action='append', help="include paths to the package and deps msg files")
     #myargs = rospy.myargv(argv=sys.argv)
     #return parser.parse_args(args=myargs[1:])
@@ -72,12 +72,12 @@ def parse_arguments(argv):
 
 def main(argv):
     '''
-    Used as the builder for genjava on the fly as other message language interfaces
+    Used as the builder for genmobile on the fly as other message language interfaces
     are built. There is a bit of smarts inside this to work out when msgs have
     changed and so forth.
     '''
     args = parse_arguments(argv[1:])
-    #print("genjava %s/%s" % (args.package, args.message))
+    #print("genmobile %s/%s" % (args.package, args.message))
     if not args.compile:
         gradle_project.create(args.package, args.output_dir)
     else:
@@ -102,9 +102,9 @@ def standalone_main(argv):
     generate artifacts for.
     '''
     args = standalone_parse_arguments(argv[1:])
-    #print("genjava %s/%s/%s" % (args.package, args.output_dir, args.verbose))
+    #print("genmobile %s/%s/%s" % (args.package, args.output_dir, args.verbose))
 
-    sorted_package_tuples = rosjava_build_tools.catkin.index_message_package_dependencies_from_local_environment(package_name_list=args.packages)
+    sorted_package_tuples = rosmobile_build_tools.catkin.index_message_package_dependencies_from_local_environment(package_name_list=args.packages)
 
     print("")
     print("Generating message artifacts for: \n%s" % [p.name for (unused_relative_path, p) in sorted_package_tuples])

@@ -1,8 +1,8 @@
 prefix=/usr/local
 
-Name: genjava
-Description: Description of genjava
+Name: genmobile
+Description: Description of genmobile
 Version: 0.4.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: genmsg rosjava_build_tools
+Requires: genmsg rosmobile_build_tools
