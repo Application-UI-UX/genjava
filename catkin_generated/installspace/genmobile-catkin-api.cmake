@@ -1,6 +1,6 @@
-  set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "${genmobile_DIR}/../../../lib/genmobile")
+  set(GENMOBILE_MESSAGE_ARTIFACTS_BIN_DIR "${genmobile_DIR}/../../../lib/genmobile")
 
-set(GENJAVA_MESSAGE_ARTIFACTS_BIN ${GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR}/genmobile_message_artifacts)
+set(GENMOBILE_MESSAGE_ARTIFACTS_BIN ${GENMOBILE_MESSAGE_ARTIFACTS_BIN_DIR}/genmobile_message_artifacts)
 set(genmobile_INSTALL_DIR "maven/org/ros/rosmobile_messages")
 
 include(CMakeParseArguments)
@@ -35,7 +35,7 @@ macro(generate_rosmobile_messages)
 
   add_custom_target(${PROJECT_NAME}_generate_artifacts
     ALL
-    COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENJAVA_MESSAGE_ARTIFACTS_BIN}
+    COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMOBILE_MESSAGE_ARTIFACTS_BIN}
         ${verbosity}
         --avoid-rebuilding
         -o ${CMAKE_CURRENT_BINARY_DIR}
