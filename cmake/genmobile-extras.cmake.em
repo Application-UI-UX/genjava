@@ -1,12 +1,12 @@
 @[if DEVELSPACE]@
 # location of scripts in develspace
-set(GENJAVA_BIN_DIR "@(CMAKE_CURRENT_SOURCE_DIR)/scripts")
+set(GENMOBILE_BIN_DIR "@(CMAKE_CURRENT_SOURCE_DIR)/scripts")
 @[else]@
 # location of scripts in installspace
-set(GENJAVA_BIN_DIR "${genmobile_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
+set(GENMOBILE_BIN_DIR "${genmobile_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
 @[end if]@
 
-set(GENJAVA_BIN ${GENJAVA_BIN_DIR}/genmobile_gradle_project.py)
+set(GENMOBILE_BIN ${GENMOBILE_BIN_DIR}/genmobile_gradle_project.py)
 set(genmobile_INSTALL_DIR "maven/org/ros/rosmobile_messages")
 
 macro(_generate_msg_java ARG_PKG ARG_MSG ARG_IFLAGS ARG_MSG_DEPS ARG_GEN_OUTPUT_DIR)
@@ -53,8 +53,8 @@ macro(_generate_module_java ARG_PKG ARG_GEN_OUTPUT_DIR ARG_GENERATED_FILES)
     # without the huge latency whenever we don't.
     set(DROPPINGS_FILE "${GRADLE_BUILD_DIR}/${ARG_PKG}/droppings")
     add_custom_command(OUTPUT ${GRADLE_BUILD_FILE}
-        DEPENDS ${GENJAVA_BIN} ${ARG_GENERATED_FILES}
-        COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENJAVA_BIN}
+        DEPENDS ${GENMOBILE_BIN} ${ARG_GENERATED_FILES}
+        COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMOBILE_BIN}
             -o ${GRADLE_BUILD_DIR}
             -p ${ARG_PKG}
         COMMAND touch ${DROPPINGS_FILE}
@@ -78,7 +78,7 @@ macro(_generate_module_java ARG_PKG ARG_GEN_OUTPUT_DIR ARG_GENERATED_FILES)
     endif()
 
     add_custom_target(${ARG_PKG}_generate_messages_java_gradle
-        COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENJAVA_BIN}
+        COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMOBILE_BIN}
             ${verbosity}
             --compile
             -o ${GRADLE_BUILD_DIR}
