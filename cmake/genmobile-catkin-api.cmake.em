@@ -1,11 +1,11 @@
 @[if DEVELSPACE]@
 # location of scripts in develspace
-  set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "@(CMAKE_CURRENT_SOURCE_DIR)/scripts")
+  set(GENMOBILE_MESSAGE_ARTIFACTS_BIN_DIR "@(CMAKE_CURRENT_SOURCE_DIR)/scripts")
 @[else]@
-  set(GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR "${genmobile_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
+  set(GENMOBILE_MESSAGE_ARTIFACTS_BIN_DIR "${genmobile_DIR}/../../../@(CATKIN_PACKAGE_BIN_DESTINATION)")
 @[end if]@
 
-set(GENJAVA_MESSAGE_ARTIFACTS_BIN ${GENJAVA_MESSAGE_ARTIFACTS_BIN_DIR}/genmobile_message_artifacts)
+set(GENMOBILE_MESSAGE_ARTIFACTS_BIN ${GENMOBILE_MESSAGE_ARTIFACTS_BIN_DIR}/genmobile_message_artifacts)
 set(genmobile_INSTALL_DIR "maven/org/ros/rosmobile_messages")
 
 include(CMakeParseArguments)
@@ -40,7 +40,7 @@ macro(generate_rosmobile_messages)
 
   add_custom_target(${PROJECT_NAME}_generate_artifacts
     ALL
-    COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENJAVA_MESSAGE_ARTIFACTS_BIN}
+    COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMOBILE_MESSAGE_ARTIFACTS_BIN}
         ${verbosity}
         --avoid-rebuilding
         -o ${CMAKE_CURRENT_BINARY_DIR}
