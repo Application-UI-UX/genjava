@@ -1,2 +1,3 @@
 src/genmobile/*.pyc
 init_setup.sh
+push.sh
