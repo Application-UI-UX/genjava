@@ -383,16 +383,16 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
 //The directory containing a CMake configuration file for catkin.
-catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
+catkin_DIR:PATH=/opt/ros/main/share/catkin/cmake
 
 //The directory containing a CMake configuration file for gencpp.
-gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
+gencpp_DIR:PATH=/opt/ros/main/share/gencpp/cmake
 
 //The directory containing a CMake configuration file for geneus.
-geneus_DIR:PATH=/opt/ros/noetic/share/geneus/cmake
+geneus_DIR:PATH=/opt/ros/main/share/geneus/cmake
 
 //The directory containing a CMake configuration file for genlisp.
-genlisp_DIR:PATH=/opt/ros/noetic/share/genlisp/cmake
+genlisp_DIR:PATH=/opt/ros/main/share/genlisp/cmake
 
 //Value Computed by CMake
 genmobile_BINARY_DIR:STATIC=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
@@ -401,13 +401,13 @@ genmobile_BINARY_DIR:STATIC=/home/ronaldsonbellande-hplaptop/Desktop/User_Interf
 genmobile_SOURCE_DIR:STATIC=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
 
 //The directory containing a CMake configuration file for genmsg.
-genmsg_DIR:PATH=/opt/ros/noetic/share/genmsg/cmake
+genmsg_DIR:PATH=/opt/ros/main/share/genmsg/cmake
 
 //The directory containing a CMake configuration file for gennodejs.
-gennodejs_DIR:PATH=/opt/ros/noetic/share/gennodejs/cmake
+gennodejs_DIR:PATH=/opt/ros/main/share/gennodejs/cmake
 
 //The directory containing a CMake configuration file for genpy.
-genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
+genpy_DIR:PATH=/opt/ros/main/share/genpy/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/gtest/googlemock
