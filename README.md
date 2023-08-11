@@ -1,4 +1,4 @@
-## Genjava
+## GenMobile
 
 Website
 --------------------------------------------------------------------------------
@@ -6,7 +6,7 @@ https://application-ui-ux.github.io/genmobile/target/site/index.html
 --------------------------------------------------------------------------------
 Updated Version [genmobile](https://github.com/Application-UI-UX/genmobile) readme.
 
-Old Version [genjava](https://github.com/rosjava/genjava) readme.
+Old Version [genmobile](https://github.com/rosjava/genmobile) readme.
 
 This package is a generator of rosmobile message artifacts for core ros messages for mobile
 
