@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: genmobile
+Version: 0.4.0
+Summary: Java ROS message and service generators.
+Home-page: http://www.ros.org/wiki/genmobile
+Author: Daniel Stonier, Ronaldson Bellande
+Maintainer: Ronaldson Bellande
+Maintainer-email: ronaldsonbellande@gmail.com
+License: BSD
+Requires: genmsg
+License-File: LICENSE
