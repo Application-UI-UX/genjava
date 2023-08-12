@@ -1,5 +1,9 @@
 src/genmobile/*.pyc
 init_setup.sh
 repository_recal.sh
+<<<<<<< HEAD
 push.sh
 publish.sh
+=======
+push.sh
+>>>>>>> 9334172862d903951eb4962eb0b5d50898a5f293
