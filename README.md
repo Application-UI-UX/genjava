@@ -8,6 +8,13 @@ Updated Version [genmobile](https://github.com/Application-UI-UX/genmobile) read
 
 Old Version [genmobile](https://github.com/rosjava/genmobile) readme.
 
+### Instalation
+- `pip install genmobile`
+
+## Website
+- https://pypi.org/project/genmobile/
+
+
 This package is a generator of rosmobile message artifacts for core ros messages for mobile
 
 ## Important
