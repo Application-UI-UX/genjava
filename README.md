@@ -1,4 +1,4 @@
-## GenMobile
+## Genmobile
 
 Website
 --------------------------------------------------------------------------------
@@ -6,7 +6,7 @@ https://application-ui-ux.github.io/genmobile/target/site/index.html
 --------------------------------------------------------------------------------
 Updated Version [genmobile](https://github.com/Application-UI-UX/genmobile) readme.
 
-Old Version [genmobile](https://github.com/rosjava/genmobile) readme.
+Old Version [gejava](https://github.com/rosjava/genjava) readme.
 
 ---------------------------------------------------------------------------------------
 ### Instalation
