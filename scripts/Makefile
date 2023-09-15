@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
+CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
+CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(CMAKE_COMMAND) -E cmake_progress_start /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/CMakeFiles /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/scripts/CMakeFiles/progress.marks
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(MAKE) -f CMakeFiles/Makefile2 scripts/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/CMakeFiles 0
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(CMAKE_COMMAND) -E cmake_progress_start /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/CMakeFiles /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/scripts/CMakeFiles/progress.marks
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(MAKE) -f CMakeFiles/Makefile2 scripts/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(MAKE) -f CMakeFiles/Makefile2 scripts/clean
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(MAKE) -f CMakeFiles/Makefile2 scripts/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(MAKE) -f CMakeFiles/Makefile2 scripts/preinstall
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(MAKE) -f CMakeFiles/Makefile2 scripts/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(MAKE) -f CMakeFiles/Makefile2 scripts/preinstall
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(MAKE) -f CMakeFiles/Makefile2 scripts/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

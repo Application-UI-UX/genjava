@@ -13,7 +13,7 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile"
+echo_and_run cd "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator"
 
 # ensure that Python install destination exists
 echo_and_run mkdir -p "$DESTDIR/usr/local/lib/python3/dist-packages"
@@ -22,12 +22,12 @@ echo_and_run mkdir -p "$DESTDIR/usr/local/lib/python3/dist-packages"
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/usr/local/lib/python3/dist-packages:/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile" \
+    PYTHONPATH="/usr/local/lib/python3/dist-packages:/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator" \
     "/usr/bin/python3" \
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/setup.py" \
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/setup.py" \
      \
-    build --build-base "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile" \
+    build --build-base "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator" \
     install \
     --root="${DESTDIR-/}" \
     --install-layout=deb --prefix="/usr/local" --install-scripts="/usr/local/bin"

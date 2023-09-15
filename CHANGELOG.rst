@@ -1,6 +1,22 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package genmobile
+Changelog for package mobile_message_service_generator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+0.4.3 (2023-09-14)
+------------------
+* Fix countless bugs in the repository 
+* Rerelease dedicated code for maven, ros, and python
+* Change name for more discriptions a take down old publish namees
+* Make repository compatible with ROS2 and will now be compatible for ROS1 and ROS2
+* Upgrade version of all builds and make it more compatible
+* Maintainer & Contributors & Aurthor: Ronaldson Bellande
+
+0.4.2 (2023-09-11)
+------------------
+* Fix countless bugs in the repository and recalibrate
+* Release dedicated code for maven, ros, and python 
+* Maintainer & Contributors & Aurthor: Ronaldson Bellande
+
 
 0.4.0 (2022-05-19)
 ------------------
@@ -48,13 +64,13 @@ Changelog for package genmobile
 
 0.1.2 (2015-02-27)
 ------------------
-* bugfix genmobile dir variable settings, fixes `#1 <https://github.com/rosmobile/genmobile/issues/1>`_
+* bugfix mobile_message_service_generator dir variable settings, fixes `#1 <https://github.com/rosmobile/mobile_message_service_generator/issues/1>`_
 * Contributors: Daniel Stonier
 
 0.1.1 (2015-02-25)
 ------------------
 * command line tools for building messages from the command line
 * cmake api for building messages from catkin
-* genmobile api for building messages on the fly
+* mobile_message_service_generator api for building messages on the fly
 * prototype version, builds mini gradle projects for each package
 * Contributors: Daniel Stonier

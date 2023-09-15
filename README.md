@@ -1,30 +1,28 @@
-## Genmobile
+## ROS Mobile Message Service Generator
 
 Website
---------------------------------------------------------------------------------
-https://application-ui-ux.github.io/genmobile/target/site/index.html
---------------------------------------------------------------------------------
-Updated Version [genmobile](https://github.com/Application-UI-UX/genmobile) readme.
+--------------------------------------------------------------------------------------------
+https://application-ui-ux.github.io/mobile_message_service_generator/target/site/index.html
+--------------------------------------------------------------------------------------------
+Updated Version [mobile_message_service_generator](https://github.com/Application-UI-UX/mobile_message_service_generator) readme.
 
 Old Version [gejava](https://github.com/rosjava/genjava) readme.
 
----------------------------------------------------------------------------------------
-### Instalation
-- `pip install genmobile`
+--------------------------------------------------------------------------------------------
+### Installation
+- `pip install mobile-message-service-generator`
 
 #### Installation Website
-- https://pypi.org/project/genmobile/
----------------------------------------------------------------------------------------
+- https://pypi.org/project/mobile-message-service-generator/
 
-
+--------------------------------------------------------------------------------------------
 This package is a generator of rosmobile message artifacts for core ros messages for mobile
 
 ## Important
 The repository has diverged, as the old commits and codes are under the previous License and
 the new commits and codes are under New License
 
-----
-
+--------------------------------------------------------------------------------------------
 Latest versions and Maintainer is on Application-UI-UX
 
 ### Building and Packaging
@@ -63,4 +61,4 @@ require a rebuild of this package:
 
 
 ## License
-This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/Application-UI-UX/rosmobile_build_tools/blob/master/LICENSE) and [NOTICE](https://github.com/Application-UI-UX//blob/master/LICENSE) for more information.
+This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/Application-UI-UX/mobile_message_service_generator/blob/main/LICENSE) and [NOTICE](https://github.com/Application-UI-UX/mobile_message_service_generator/blob/main/LICENSE) for more information.

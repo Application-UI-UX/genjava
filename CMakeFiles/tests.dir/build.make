@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
+CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile
+CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 
