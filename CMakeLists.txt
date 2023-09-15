@@ -3,23 +3,23 @@
 ##############################################################################
 
 cmake_minimum_required(VERSION 3.0.2)
-project(genmobile)
+project(mobile_message_service_generator)
 
 ##############################################################################
 # Find Package
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS genmsg rosmobile_build_tools)
+find_package(catkin REQUIRED COMPONENTS genmsg mobile_catkin_modules_build_development_tools)
 
 ##############################################################################
 # Catkin
 ##############################################################################
 
 catkin_package(
-  CATKIN_DEPENDS genmsg rosmobile_build_tools
+  CATKIN_DEPENDS genmsg mobile_catkin_modules_build_development_tools
   CFG_EXTRAS
-  genmobile-extras.cmake
-  genmobile-catkin-api.cmake
+  mobile_message_service_generator-extras.cmake
+  mobile_message_service_generator-catkin-api.cmake
 )
 
 catkin_python_setup()
@@ -30,9 +30,9 @@ catkin_python_setup()
 
 add_subdirectory(scripts)
 
-file(WRITE ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genmobile "Java")
+file(WRITE ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/mobile_message_service_generator "Java")
 install(
-  FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/genmobile
+  FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/mobile_message_service_generator
   DESTINATION ${GENMSG_LANGS_DESTINATION}
 )
 

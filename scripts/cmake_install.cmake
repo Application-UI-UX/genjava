@@ -1,4 +1,4 @@
-# Install script for directory: /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/scripts
+# Install script for directory: /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/scripts
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,10 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/genmobile" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/scripts/catkin_generated/installspace/genmobile_gradle_project.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mobile_message_service_generator" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/scripts/catkin_generated/installspace/mobile_message_service_generator_gradle_project.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/genmobile" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/scripts/catkin_generated/installspace/genmobile_message_artifacts")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mobile_message_service_generator" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/scripts/catkin_generated/installspace/mobile_message_service_generator_message_artifacts")
 endif()
 

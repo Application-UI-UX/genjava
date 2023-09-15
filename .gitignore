@@ -1,9 +1,22 @@
-src/genmobile/*.pyc
+
+*.class
+*.pyc
+
+# Folders
+build
+devel
+dist
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Scripts
 init_setup.sh
 repository_recal.sh
-<<<<<<< HEAD
 push.sh
 publish.sh
-=======
-push.sh
->>>>>>> 9334172862d903951eb4962eb0b5d50898a5f293
+ros_publish.sh
+prerelease_test.sh
+errors_fix.sh
