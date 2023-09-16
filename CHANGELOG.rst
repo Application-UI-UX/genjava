@@ -17,7 +17,6 @@ Changelog for package mobile_message_service_generator
 * Release dedicated code for maven, ros, and python 
 * Maintainer & Contributors & Aurthor: Ronaldson Bellande
 
-
 0.4.0 (2022-05-19)
 ------------------
 * Update package.xml, CMakeList.txt for main branch
@@ -25,7 +24,6 @@ Changelog for package mobile_message_service_generator
 * Fix Bugs that has to do with the gradle building
 * Release version in github for easy access when building project
 * Contributors: Ronaldson Bellande
-
 
 0.3.4 (2019-01-23)
 ------------------
