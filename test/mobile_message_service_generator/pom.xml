@@ -5,7 +5,7 @@
 
   <groupId>com.github.Application-UI-UX</groupId>
   <artifactId>genmobile</artifactId>
-  <version>0.4.0</version>
+  <version>0.4.3</version>
   <packaging>jar</packaging>
 
   <properties>
@@ -33,7 +33,7 @@
     <dependency>
       <groupId>com.github.Application-UI-UX</groupId>
       <artifactId>rosmobile_build_tools</artifactId>
-      <version>0.4.0</version>
+      <version>0.4.3</version>
     </dependency>
   </dependencies>
 
@@ -50,7 +50,7 @@
     <connection>scm:git:https://github.com/Application-UI-UX/genmobile.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/Application-UI-UX/genmobile.git</developerConnection>
     <url>https://github.com/Application-UI-UX/genmobile</url>
-    <tag>genmobile-0.4.0</tag>
+    <tag>genmobile-0.4.3</tag>
   </scm>
 
 

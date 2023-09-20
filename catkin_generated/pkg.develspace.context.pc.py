@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "genmsg;mobile_catkin_modules_build_development_tools".
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "mobile_message_service_generator"
 PROJECT_SPACE_DIR = "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_message_service_generator/devel"
-PROJECT_VERSION = "0.4.0"
+PROJECT_VERSION = "0.4.3"

@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "mobile_message_service_generator")
-set(mobile_message_service_generator_VERSION "0.4.0")
+set(mobile_message_service_generator_VERSION "0.4.3")
 set(mobile_message_service_generator_MAINTAINER "Ronaldson Bellande <ronaldsonbellande@gmail.com>")
 set(mobile_message_service_generator_PACKAGE_FORMAT "1")
 set(mobile_message_service_generator_BUILD_DEPENDS "genmsg" "mobile_catkin_modules_build_development_tools" "python-catkin-pkg" "python-rospkg" "rosmobile_bootstrap" "mobile_catkin_modules_build_development_tools")
