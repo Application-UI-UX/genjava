@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "genmsg;rosmobile_build_tools".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "genmobile"
 PROJECT_SPACE_DIR = "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/genmobile/devel"
-PROJECT_VERSION = "0.4.0"
+PROJECT_VERSION = "0.4.3"

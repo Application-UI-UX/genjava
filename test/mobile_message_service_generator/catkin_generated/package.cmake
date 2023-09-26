@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "genmobile")
-set(genmobile_VERSION "0.4.0")
+set(genmobile_VERSION "0.4.3")
 set(genmobile_MAINTAINER "Ronaldson Bellande <ronaldsonbellande@gmail.com>")
 set(genmobile_PACKAGE_FORMAT "1")
 set(genmobile_BUILD_DEPENDS "genmsg" "rosmobile_build_tools" "python-catkin-pkg" "python-rospkg" "rosmobile_bootstrap" "rosmobile_build_tools")

@@ -1,6 +1,6 @@
 <package>
   <name>genmobile</name>
-  <version>0.4.0</version>
+  <version>0.4.3</version>
   <description> Java ROS message and service generators. </description>
   <license>BSD</license>
 

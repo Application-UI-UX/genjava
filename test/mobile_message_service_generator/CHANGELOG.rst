@@ -2,7 +2,7 @@
 Changelog for package genmobile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.4.0 (2022-05-19)
+0.4.3 (2022-05-19)
 ------------------
 * Update package.xml, CMakeList.txt for main branch
 * Update gradle and wapper to be up-to-date

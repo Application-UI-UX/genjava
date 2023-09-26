@@ -19,4 +19,5 @@ push.sh
 publish.sh
 ros_publish.sh
 prerelease_test.sh
-errors_fix.sh
+fix_errors.sh
+replace_add_index.sh

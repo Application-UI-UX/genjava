@@ -2,7 +2,7 @@
 
 Website
 --------------------------------------------------------------------------------------------
-https://application-ui-ux.github.io/mobile_message_service_generator/target/site/index.html
+https://application-ui-ux.github.io/mobile_message_service_generator
 --------------------------------------------------------------------------------------------
 Updated Version [mobile_message_service_generator](https://github.com/Application-UI-UX/mobile_message_service_generator) readme.
 

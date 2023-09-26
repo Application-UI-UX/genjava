@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: genmobile
-Version: 0.4.0
+Version: 0.4.3
 Summary: Java ROS message and service generators.
 Author: Ronaldson Bellande
 Maintainer: Ronaldson Bellande
