@@ -1,15 +1,12 @@
-##############################################################################
-# CMake
-##############################################################################
-
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(mobile_message_service_generator)
 
-##############################################################################
-# Find Package
-##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS genmsg mobile_catkin_modules_build_development_tools)
+find_package(
+  catkin REQUIRED COMPONENTS 
+  genmsg 
+  mobile_catkin_modules_build_development_tools
+  )
 
 ##############################################################################
 # Catkin
