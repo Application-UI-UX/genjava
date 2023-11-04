@@ -11,7 +11,7 @@ Updated Version [mobile_message_service_generator](https://github.com/Applicatio
 Old Version [gejava](https://github.com/rosjava/genjava) readme.
 
 # Release
-[![Latest Release](https://img.shields.io/github/v/release/Application-UI-UX/mobile_message_service_generator?style=for-the-badge&color=red)](https://github.com/Application-UI-UX/mobile_message_service_generator/releases/)
+[![Latest Release](https://img.shields.io/github/v/release/Application-UI-UX/mobile_message_service_generator?style=for-the-badge&color=yellow)](https://github.com/Application-UI-UX/mobile_message_service_generator/releases/)
 
 --------------------------------------------------------------------------------------------
 ### Installation
