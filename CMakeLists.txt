@@ -4,7 +4,8 @@ project(mobile_message_service_generator)
 
 find_package(
   catkin REQUIRED COMPONENTS 
-  genmsg 
+  genmsg
+  mobile_catkin_gradle_plugins
   mobile_catkin_modules_build_development_tools
   )
 
