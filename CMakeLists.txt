@@ -2,29 +2,33 @@ cmake_minimum_required(VERSION 3.8)
 project(mobile_message_service_generator)
 
 
-find_package(
-  catkin REQUIRED COMPONENTS 
-  genmsg
-  mobile_catkin_gradle_plugins
-  mobile_catkin_modules_build_development_tools
+# Find ROS
+if($ENV{ROS_VERSION} EQUAL 1)
+  find_package(
+    catkin REQUIRED COMPONENTS 
+    genmsg
+    mobile_catkin_gradle_plugins
+    mobile_catkin_modules_build_development_tools
+    )
+else()
+  find_package(ament_cmake REQUIRED
+    genmsg
+    mobile_catkin_gradle_plugins
+    mobile_catkin_modules_build_development_tools
+    )
+endif()
+
+
+if($ENV{ROS_VERSION} EQUAL 1)
+  catkin_package(
+    CATKIN_DEPENDS genmsg mobile_catkin_modules_build_development_tools
+    CFG_EXTRAS
+    mobile_message_service_generator-extras.cmake
+    mobile_message_service_generator-catkin-api.cmake
   )
-
-##############################################################################
-# Catkin
-##############################################################################
-
-catkin_package(
-  CATKIN_DEPENDS genmsg mobile_catkin_modules_build_development_tools
-  CFG_EXTRAS
-  mobile_message_service_generator-extras.cmake
-  mobile_message_service_generator-catkin-api.cmake
-)
+endif()
 
 catkin_python_setup()
-
-##############################################################################
-# Installs
-##############################################################################
 
 add_subdirectory(scripts)
 
@@ -33,11 +37,3 @@ install(
   FILES ${CATKIN_DEVEL_PREFIX}/${GENMSG_LANGS_DESTINATION}/mobile_message_service_generator
   DESTINATION ${GENMSG_LANGS_DESTINATION}
 )
-
-##############################################################################
-# Tests
-##############################################################################
-
-#if(CATKIN_ENABLE_TESTING)
-#  catkin_add_nosetests(test)
-#endif()
