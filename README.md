@@ -17,12 +17,12 @@
 [![Visitor & Github Clones](https://img.shields.io/badge/dynamic/json?color=2e8b57&label=Visitor%20%26%20GitHub%20Clones&query=$.count&url=https://api.github.com/repos/Application-UI-UX/mobile_message_service_generator/traffic)](https://github.com/Application-UI-UX/mobile_message_service_generator)
 
 
-
 ## Repository Website
 --------------------------------------------------------------------------------------------
-https://application-ui-ux.github.io/mobile_message_service_generator
+[![Repository Website](https://img.shields.io/website/https/application-ui-ux.github.io/mobile_message_service_generator?down_color=red&down_message=offline&label=Repository%20Website&style=for-the-badge)](https://application-ui-ux.github.io/mobile_message_service_generator)
 --------------------------------------------------------------------------------------------
 Updated Version [mobile_message_service_generator](https://github.com/Application-UI-UX/mobile_message_service_generator) readme.
+
 Old Version [gejava](https://github.com/rosjava/genjava) readme.
 
 # Release
@@ -31,23 +31,21 @@ Old Version [gejava](https://github.com/rosjava/genjava) readme.
 --------------------------------------------------------------------------------------------
 ### Installation
 - `pip install mobile-message-service-generator`
-
-#### Installation Website
-- https://pypi.org/project/mobile-message-service-generator/
-
 --------------------------------------------------------------------------------------------
 This package is a generator of rosmobile message artifacts for core ros messages for mobile
-
-
-# Contact
-Depeding on the repository, If you are interested in accessing the complete version or other repository related to this repository, we kindly request that you reach out to the organization's director or the company behind this project. We invite you to explore the USE CASE to understand the specific terms and conditions for usage. To utilize this repository, it is imperative that you adhere to the guidelines outlined in the USE CASE. For those interested in showing their support, becoming a sponsor of the organization is an option, and detailed information can be found within the USE CASE and License documents. Furthermore, we encourage you to join our official Discord community, where you can engage with like-minded individuals, contribute to the project, and stay up-to-date with the latest developments. It's worth noting that while a fraction of research is publicly accessible, the majority remains private. To gain insights into the wealth of knowledge held by the Company or the organization's director, we recommend direct contact for more information.
 
 ## Important
 The repository has diverged, as the old commits and codes are under the previous License and
 the new commits and codes are under New License
 
 --------------------------------------------------------------------------------------------
-Latest versions and Maintainer is on Application-UI-UX
+
+### Building and Packaging (ROS/Python/Maven)
+- ROS -----> [![ROS](https://img.shields.io/badge/ROS-temp-blue?style=for-the-badge)](https://temp)
+- ROS2 ----> [![ROS2](https://img.shields.io/badge/ROS2-temp-blue?style=for-the-badge)](https://temp)
+- Maven ----> [![Maven](https://img.shields.io/badge/Maven-Application--UI--UX-blue?style=for-the-badge)](https://github.com/Application-UI-UX)
+- Python ----> [![Python Package](https://img.shields.io/badge/Python%20Package-mobile--message--services--generator-blue?style=for-the-badge)](https://pypi.org/project/mobile-message-service-generator)
+
 
 ### Building and Packaging
 The package is published in https://github.com/Application-UI-UX
@@ -79,12 +77,6 @@ require a rebuild of this package:
 * update the changelog and bump the version number in package.xml
 * tag it with the new version number
 * release
-
-
-# USE CASE
---------------------------------------------------------------------------------------------------------
-* Every repository within our organization is a valuable resource that can be utilized for educational purposes by individuals who actively contribute to the repository or choose to become sponsors of the organization. For those who wish to use our services conversationally, the acquisition of a license and subscription from our company website is mandatory. This ensures that the services are appropriately compensated for their use. Additionally, for the 90% of services designated as private, acquiring a license and subscription can be facilitated through our company website. We encourage interested parties to visit our website to explore and procure the necessary licenses and subscriptions for the diverse range of services and products we offer. Your support and commitment enable us to maintain and enhance the quality of our offerings, contributing to a thriving collaborative environment.
---------------------------------------------------------------------------------------------------------
 
 
 ### Maintainer
